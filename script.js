@@ -5,6 +5,10 @@ const startButton = document.getElementById("start");
 const stopButton = document.getElementById("stop");
 const resetButton = document.getElementById("reset");
 
+document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+});
+
 let minutes = 0;
 let seconds = 0;
 let hours = 0;
